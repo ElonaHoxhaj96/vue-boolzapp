@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* stiling backgroun */
+.bg-header{
+    height: 150px;
+}
+.bg-down{
+    height: calc(100vh - 150px);
+}
