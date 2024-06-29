@@ -2,11 +2,34 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
-/* stiling backgroun */
-.bg-header{
-    height: 150px;
+/* stiling main*/
+body{
+    background-color: #009688;
 }
 .bg-down{
     height: calc(100vh - 150px);
+    margin-top: 150px;
+}
+.bg-white{
+    background-color: white;
+    height: 90vh;
+    margin: -100px;
+    border: solid 0.01rem grey;
+}
+
+/* Chat section left */
+#owner_profile{
+    width: 100%;
+}
+.img_profile_utenti{
+    width: 100%;
+    height: 50px;
+}
+.img_profile_utenti > img{
+  width: 4rem;    
+}
+.icone{
+   
 }
