@@ -11,17 +11,21 @@ body{
 .bg-down{
     height: calc(100vh - 150px);
     margin-top: 150px;
+    background-color: rgb(155, 155, 155);
+    position: relative;
 }
 .bg-white{
+    width: 90%;
     background-color: white;
-    height: 90vh;
-    margin: -100px;
-    border: solid 0.01rem grey;
+    min-height: 100px;
+    position: absolute;
+    top: -70px;
+    left: 5vw;
 }
 
 /* Chat section left */
 #owner_profile{
-    width: 100%;
+    width: 50%;
 }
 .img_profile_utenti{
     width: 100%;
