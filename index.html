@@ -82,9 +82,7 @@
                     </div>
                     <!-- Conversation chat -->
                     <div class="chat-messages">
-                        <div class="message received">Hello!</div>
-                        <div class="message sent">Hi there!</div>
-                        <div class="message received">How are you?</div>
+                        <div class="message_chat" :class="message.status === 'sent' ? 'sent' : 'received'" v-for="message in contacts[0].messages">{{message.message}}</div>  
                     </div>
                     <div class="chat-input">
                         <i class="fa-regular fa-face-smile input_cone"></i>
@@ -101,3 +99,12 @@
     <script src="main.js"></script>
 </body>
 </html>
+
+
+
+
+<!-- <div class="chat-messages">
+    <div :class="message.status === 'sent' ? 'sent' : 'received'" v-for="message in contacts[0].messages">
+        <div class="message_chat ">{{message.message}}</div>
+    </div>
+</div> -->
