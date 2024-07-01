@@ -17,9 +17,9 @@ body{
 .bg-white{
     width: 90%;
     background-color: white;
-    min-height: 90vh;
+    min-height: 95vh;
     position: absolute;
-    top: -95px;
+    top: -125px;
     left: 5vw;
     display: flex;
 }
@@ -125,7 +125,7 @@ img{
 .chat-messages{
     background-image: url(img/wall\ paper.png);
     background-size: contain;
-    height: calc(90vh - 100px);
+    height: calc(95vh - 100px);
     display: flex;
     flex-direction: column;
 }
@@ -136,15 +136,31 @@ img{
     border-radius: 5px;
     width: 40%;
 }
-
 .received {
     background-color: #f0f0f0;
-  
-}
 
+}
 .sent {
     background-color: #DCF8C6;
     align-self: flex-end;
+}
+.chat-input {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(244 235 226);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chat-input input{
+    width: 86%;
+    font-size: 15px;
+}
+
+.input_cone{
+    width: 7%;
+    font-size: 15px;
+    text-align: center;
 }
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
