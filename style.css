@@ -23,18 +23,16 @@ body{
     left: 5vw;
     display: flex;
 }
-
+/* /////////////////////////////////////////////////////////////////////////////// */
 /* Chat section left principal setting*/
 .left{
     width: 40%;
 }
-
 #owner_profile{
     height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 .img_profile_utenti{
   display: flex;
@@ -48,42 +46,6 @@ body{
    display: flex;
    gap: 0.5rem;
 }
-
-/* setting chat message right section, principal setting*/
-.right{
-    width: 60%;
-}
-.chat_message_other{
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.chat-messages{
-    background-image: url(img/wall\ paper.png);
-    background-size: contain;
-    height: calc(90vh - 100px);
-    display: flex;
-    flex-direction: column;
-}
-/* conversation */
-.message {
-    padding: 5px 10px;
-    margin: 5px 30px;
-    border-radius: 5px;
-    width: 40%;
-}
-
-.received {
-    background-color: #f0f0f0;
-  
-}
-
-.sent {
-    background-color: #DCF8C6;
-    align-self: flex-end;
-}
-/* ////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* Notification */
 .notification{
     background-color: rgb(95, 201, 237);
@@ -126,6 +88,65 @@ body{
 .input_search input{
     width: 95%;
 }
+/* Contact chat */
+.contact{
+    position: relative;
+    display: flex;
+    gap: 0.5rem;
+}
+.profilo_contatti{
+    width: 10%;
+}
+img{
+    width: 100%;
+    border-radius: 50%;
+}
+.ultimo_messaggio, .ora{
+    color: rgb(152, 152, 152);
+}
+.contact span{
+    justify-content: flex-end;
+} 
+.ora{
+    position: absolute;
+    right: 10px;
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* setting chat message right section*/
+.right{
+    width: 60%;
+}
+.chat_message_other{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.chat-messages{
+    background-image: url(img/wall\ paper.png);
+    background-size: contain;
+    height: calc(90vh - 100px);
+    display: flex;
+    flex-direction: column;
+}
+/* conversation */
+.message {
+    padding: 5px 10px;
+    margin: 5px 30px;
+    border-radius: 5px;
+    width: 40%;
+}
+
+.received {
+    background-color: #f0f0f0;
+  
+}
+
+.sent {
+    background-color: #DCF8C6;
+    align-self: flex-end;
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 
 
