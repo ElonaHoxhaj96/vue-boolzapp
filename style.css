@@ -17,23 +17,108 @@ body{
 .bg-white{
     width: 90%;
     background-color: white;
-    min-height: 100px;
+    min-height: 90vh;
     position: absolute;
-    top: -70px;
+    top: -95px;
     left: 5vw;
+    display: flex;
 }
 
-/* Chat section left */
+/* Chat section left principal setting*/
+.left{
+    width: 40%;
+}
+
 #owner_profile{
-    width: 50%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 .img_profile_utenti{
-    width: 100%;
-    height: 50px;
+  display: flex;
+  align-items: center;
 }
 .img_profile_utenti > img{
   width: 4rem;    
 }
 .icone{
-   
+   padding-right: 0.5rem;
+}
+
+/* setting chat message right section, principal setting*/
+.right{
+    width: 60%;
+}
+.chat_message_other{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* Notification */
+.notification{
+    background-color: rgb(95, 201, 237);
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    gap:0.7rem;
+}
+.campana{
+    background-color: white;
+    color: rgb(95, 201, 237);
+    font-size: 25px;
+    border-radius: 60px;
+    padding: 0.5rem 0.5rem;
+    margin-left: 0.5rem;
+}
+
+/* search chat name */
+.search_bar{
+    background-color: #f8f8f8;
+}
+.search_bar > button{
+    background-color: white;
+    border: solid 0.01rem rgb(188, 185, 185);
+    color: rgb(188, 185, 185);
+    font-size: 1.5rem;
+    padding: 0.5rem 0.5rem;
+    margin-left: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* conversation */
+
+.message {
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.received {
+    background-color: #f0f0f0;
+}
+
+.sent {
+    background-color: #DCF8C6;
+    align-self: flex-end;
 }
