@@ -87,7 +87,6 @@
                     <!-- Conversation chat -->
                     <div class="chat-messages">
                         <div class="message_chat" :class="message.status === 'sent' ? 'sent' : 'received'" v-for="message in contacts[activeChat].messages">{{message.message}}</div>
-
                     </div>
                     <div class="chat-input">
                         <i class="fa-regular fa-face-smile input_cone"></i>

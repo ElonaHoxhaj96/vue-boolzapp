@@ -8,7 +8,7 @@ createApp({
             contacts: [
                 {
                     name: 'Michele',
-                    avatar: 'img/3.jpg',
+                    avatar: 'img/2.jpg',
                     visible: true,
                     messages: [
                         {
@@ -30,7 +30,7 @@ createApp({
                 },
                 {
                     name: 'Fabio',
-                    avatar: 'img/4.jpg',
+                    avatar: 'img/3.jpg',
                     visible: true,
                     messages: [
                         {
@@ -52,7 +52,7 @@ createApp({
                 },
                 {
                     name: 'Samuele',
-                    avatar: 'img/3.jpg',
+                    avatar: 'img/4.jpg',
                     visible: true,
                     messages: [
                         {
@@ -74,7 +74,7 @@ createApp({
                 },
                 {
                     name: 'Alessandro B.',
-                    avatar: 'img/3.jpg',
+                    avatar: 'img/5.jpg',
                     visible: true,
                     messages: [
                         {
@@ -91,7 +91,7 @@ createApp({
                 },
                 {
                     name: 'Alessandro L.',
-                    avatar: 'img/3.jpg',
+                    avatar: 'img/6.jpg',
                     visible: true,
                     messages: [
                         {
@@ -108,7 +108,7 @@ createApp({
                 },
                 {
                     name: 'Claudia',
-                    avatar: 'img/3.jpg',
+                    avatar: 'img/7.jpg',
                     visible: true,
                     messages: [
                         {
@@ -130,7 +130,7 @@ createApp({
                 },
                 {
                     name: 'Federico',
-                    avatar: 'img/3.jpg',
+                    avatar: 'img/8.jpg',
                     visible: true,
                     messages: [
                         {
@@ -147,7 +147,7 @@ createApp({
                 },
                 {
                     name: 'Davide',
-                    avatar: 'img/3.jpg',
+                    avatar: 'img/9.jpg',
                     visible: true,
                     messages: [
                         {
@@ -166,10 +166,11 @@ createApp({
                             status: 'received'
                         }
                     ],
-                }
+                },
             ]
         }
     },
+    // setting methods
         methods:{
             chatOn(index){
                 this.activeChat = index;
