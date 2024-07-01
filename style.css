@@ -45,6 +45,8 @@ body{
 }
 .icone{
    padding-right: 0.5rem;
+   display: flex;
+   gap: 0.5rem;
 }
 
 /* setting chat message right section, principal setting*/
