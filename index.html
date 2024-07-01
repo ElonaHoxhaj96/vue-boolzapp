@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boolzapp</title>
+    <!-- Vue -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- Fonteawsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Google fonts  -->
@@ -15,9 +17,6 @@
      <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- background line green -->
-    <!-- <section class="row bg-header bg-success">
-    </section> -->
     <!-- Main contenitor -->
     <main id="app">
         <section class=" bg-down">
@@ -54,13 +53,12 @@
                         </div>
                     </div>
                     <!-- Contact chat -->
-                    <div class="contact">
-                        <div></div>
+                    <div class="contact" v-for="contact in contacts">
                         <div class="profilo_contatti">
-                            <img src="img/7.jpg" alt="Foto profilo">   
+                            <img :src="contact.avatar" alt="Foto profilo">   
                         </div>
                         <div class="info_contatti">
-                            <h3 class="name">Sofia</h3>
+                            <h3 class="name">{{contact.name}}</h3>
                             <div class="ultimo_messaggio">
                                 Ultimo messaggio inviato 
                             </div>
@@ -99,7 +97,7 @@
 
     </main>
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.4.30/vue.cjs.js" integrity="sha512-qh7JY+skkyY0UCzPOgWf7Gz5X1XLmz5upCnbUMsrC3NsrVB4B8y+DOWltFhzUoQlbBfd8ZgkGfHbkSHuLzVyCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
     <script src="main.js"></script>
 </body>
 </html>
