@@ -49,12 +49,12 @@
                             <i class="fa-solid fa-magnifying-glass glass"></i>
                         </button>
                         <div class="input_search">
-                            <input type="text" placeholder="Cerca o inizia una nuova chat">
+                            <input type="text" placeholder="Cerca o inizia una nuova chat" v-model="searchQuery">
                         </div>
                     </div>
                     <!-- Contact chat -->
                      <div class="contenitor_contact">                        
-                        <div class="contact" v-for="(contact, index) in contacts" @click="chatOn(index)">
+                        <div class="contact" v-for="(contact, index) in filteredContacts" @click="chatOn(index)">
                             <div class="profilo_contatti">
                                 <img :src="contact.avatar" alt="Foto profilo">   
                             </div>

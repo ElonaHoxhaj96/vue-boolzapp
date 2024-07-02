@@ -167,8 +167,9 @@ createApp({
                             status: 'received'
                         }
                     ],
-                },
-            ]
+                }
+            ], 
+            searchQuery: ''
         }
     },
     // setting methods
@@ -196,5 +197,11 @@ createApp({
             // Pulisci l'input del messaggio dopo l'invio
             this.newMessage = '';
         }
+    },
+    computed: {
+        filteredContacts() {
+          return this.contacts.filter(contact => contact.name.toLowerCase().includes(this.searchQuery.toLowerCase()));
+        }
     }
+    
 }).mount('#app');
