@@ -69,6 +69,7 @@ body{
     display: flex;
     align-items: center;
     width: 100%;
+    height: 3.5rem;
 }
 .search_bar > button, .input_search input{
     background-color: white;
@@ -89,9 +90,10 @@ body{
     width: 95%;
 }
 /* Contact chat */
-/* .contenitor_contact, .chat-messages{
+.contenitor_contact, .chat-messages{
+    height: calc(95vh - 60px - 7rem);
     overflow: auto;
-} */
+}
 .contact{
     position: relative;
     display: flex;

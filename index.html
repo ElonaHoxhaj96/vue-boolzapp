@@ -73,10 +73,10 @@
                 <div class="right">
                     <div class="chat_message_other">
                         <div class="img_profile_utenti">
-                            <img :src="contacts[activeChat].avatar" alt="Foto profilo"> 
+                            <img :src="filteredContacts[activeChat].avatar" alt="Foto profilo"> 
                             <div class="info_contact"> 
-                                <span class="name">{{contacts[activeChat].name}}</span>
-                                <div class="accesso">Ultimo accesso alle: {{contacts[activeChat].messages[0].date}}</div>
+                                <span class="name">{{filteredContacts[activeChat].name}}</span>
+                                <div class="accesso">Ultimo accesso alle: {{filteredContacts[activeChat].messages[0].date}}</div>
                             </div>  
                         </div>
                         

@@ -92,7 +92,7 @@ createApp({
                 },
                 {
                     name: 'Alessandro L.',
-                    avatar: 'img/6.jpg',
+                    avatar: 'img/6..jpg',
                     visible: true,
                     messages: [
                         {
