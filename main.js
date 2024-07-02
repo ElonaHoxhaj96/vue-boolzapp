@@ -5,6 +5,7 @@ createApp({
     data(){
         return{
             activeChat: 0,
+            newMessage: '',
             contacts: [
                 {
                     name: 'Michele',
@@ -171,9 +172,29 @@ createApp({
         }
     },
     // setting methods
-        methods:{
-            chatOn(index){
-                this.activeChat = index;
-            }
+    methods: {
+        chatOn(index){
+            this.activeChat = index;
+        },
+        addMessage() {
+            // Aggiungi il nuovo messaggio dell'utente
+            this.contacts[this.activeChat].messages.push({
+                date: new Date().toLocaleString(),
+                message: this.newMessage,
+                status: 'sent'
+            });
+
+            // Simula una risposta dall'interlocutore dopo 1 secondo
+            setTimeout(() => {
+                this.contacts[this.activeChat].messages.push({
+                    date: new Date().toLocaleString(),
+                    message: 'Ok',
+                    status: 'received'
+                });
+            }, 1000);
+
+            // Pulisci l'input del messaggio dopo l'invio
+            this.newMessage = '';
+        }
     }
 }).mount('#app');

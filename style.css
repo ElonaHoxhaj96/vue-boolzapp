@@ -89,11 +89,15 @@ body{
     width: 95%;
 }
 /* Contact chat */
+/* .contenitor_contact, .chat-messages{
+    overflow: auto;
+} */
 .contact{
     position: relative;
     display: flex;
     gap: 0.5rem;
     margin-top: 1rem;
+    
 }
 .profilo_contatti{
     width: 10%;

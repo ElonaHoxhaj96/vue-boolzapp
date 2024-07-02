@@ -53,17 +53,19 @@
                         </div>
                     </div>
                     <!-- Contact chat -->
-                    <div class="contact" v-for="(contact, index) in contacts" @click="chatOn(index)">
-                        <div class="profilo_contatti">
-                            <img :src="contact.avatar" alt="Foto profilo">   
-                        </div>
-                        <div class="info_contatti">
-                            <h3 class="name">{{contact.name}}</h3>
-                            <div class="ultimo_messaggio">
-                                Ultimo messaggio inviato 
+                     <div class="contenitor_contact">                        
+                        <div class="contact" v-for="(contact, index) in contacts" @click="chatOn(index)">
+                            <div class="profilo_contatti">
+                                <img :src="contact.avatar" alt="Foto profilo">   
                             </div>
+                            <div class="info_contatti">
+                                <h3 class="name">{{contact.name}}</h3>
+                                <div class="ultimo_messaggio">
+                                    Ultimo messaggio inviato 
+                                </div>
+                            </div>
+                            <span class="ora">12:00</span>
                         </div>
-                        <span class="ora">12:00</span>
                     </div>
                 </div>
 
@@ -90,7 +92,7 @@
                     </div>
                     <div class="chat-input">
                         <i class="fa-regular fa-face-smile input_cone"></i>
-                        <input type="text" placeholder="Type a message...">
+                        <input type="text" placeholder="Type a message..." v-model="newMessage" @keyup.enter="addMessage">
                         <i class="fa-solid fa-microphone input_cone"></i>
                     </div>
                 </div>
@@ -103,12 +105,3 @@
     <script src="main.js"></script>
 </body>
 </html>
-
-
-
-
-<!-- <div class="chat-messages">
-    <div :class="message.status === 'sent' ? 'sent' : 'received'" v-for="message in contacts[0].messages">
-        <div class="message_chat ">{{message.message}}</div>
-    </div>
-</div> -->
